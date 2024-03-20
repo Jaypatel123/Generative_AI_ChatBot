@@ -10,7 +10,12 @@ from langchain_community.chat_models import ChatOpenAI
 
 # from langchain.vectorstores import FAISS
 
+### Vector Database, Graph Database, RDBMS, DocumentDB
+### Tech Stack - FastAPI, Streamlit, Python.
+"""
 
+
+"""
 load_dotenv()
 OPENAI_API_KEY = os.getenv("API_KEY")
 
@@ -19,7 +24,7 @@ st.header("My first Chatbot")
 
 with  st.sidebar:
     st.title("Your Documents")
-    file = st.file_uploader(" Upload a PDf file and start asking questions", type="pdf")
+    file = st.file_uploader("Upload a PDf file and start asking questions", type="pdf")
 
 #Extract the text
 if file is not None:
